@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="maskot">
+            <img id="maskot-img" src="images/maskot2.png" alt="Maskot"> 
+        </div>
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button class="number" onclick="pressButton('1')">1</button>
+                <button class="number" onclick="pressButton('2')">2</button>
+                <button class="number" onclick="pressButton('3')">3</button>
+                <button class="operation" onclick="pressButton('+')">+</button>
+    
+                <button class="number" onclick="pressButton('4')">4</button>
+                <button class="number" onclick="pressButton('5')">5</button>
+                <button class="number" onclick="pressButton('6')">6</button>
+                <button class="operation" onclick="pressButton('-')">-</button>
+    
+                <button class="number" onclick="pressButton('7')">7</button>
+                <button class="number" onclick="pressButton('8')">8</button>
+                <button class="number" onclick="pressButton('9')">9</button>
+                <button class="operation" onclick="pressButton('*')">*</button>
+    
+                <button class="number" onclick="pressButton('0')">0</button>
+                <button onclick="pressButton('C')">C</button> 
+                <button onclick="pressButton('=')">=</button> 
+                <button class="operation" onclick="pressButton('/')">/</button>
+    
+                <button class="operation" onclick="pressButton('^')">^</button> 
+                <button class="operation" onclick="pressButton('%')">%</button>
+            </div>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
